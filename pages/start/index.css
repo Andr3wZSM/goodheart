@@ -1,0 +1,144 @@
+/*@font-face {
+    font-family: 'Geometria';
+    src: url('/template/fonts');
+    }*/
+
+ul {
+	padding: 0;
+}
+
+body {
+	color: #FFFFFF;
+	font-family: sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;	
+}
+
+.container {
+	height: 100vh;
+	background-image: url('/template/img/start-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center
+}
+
+.wrapper-full {
+	max-width: 1500px;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
+/* header styles start */
+.header {
+	width: 100%;
+	display: flex;
+    flex-wrap: nowrap;
+	align-items: center;
+	margin-bottom: 130px;
+	font-size: 14px;
+}
+
+.header__logo {
+	margin-top: 22px;
+	margin-right: 100px;
+}
+
+.header__logo-pic {
+	height: 32.54px;
+	width: 36px;
+}
+
+.header__languages {
+	margin-top: 30px;
+	margin-right: 222px;
+}
+
+.languages__list-item {
+	margin-right: 10px;
+	color: #C5D5E6;
+}
+
+.languages__list-item:hover {
+	color: #FFFFFF;
+}
+
+.languages__list-item:last-child {
+	margin-right: 0;
+}
+
+.header__menu {
+	margin-top: 21px;
+	margin-right: 179px;
+}
+
+.menu__list-item {
+	margin-right: 35px;
+}
+
+.menu__list-item:last-child {
+	padding: 0 20px 0 28px;
+	background: linear-gradient(#6082D7, #E73453);
+}
+
+.header__search {
+	margin-top: 28px;
+	margin-right: 100px;
+}
+
+.header__search-ico {
+	height: 18px;
+	width: 18px;
+}
+
+.header__authorization {
+	margin-top: 30px;
+}
+
+.languages__list {
+	display: flex;
+}
+
+.menu__list {
+	display: flex;
+}
+/* header styles end */
+
+/* about styles start */
+.about {
+	display: flex;
+	margin-left: 100px;
+}
+
+.about__more {
+	margin-bottom: 57px;
+	display: flex;
+}
+
+.about__more-title {
+	font-size: 64px;
+	margin-right: 18px;
+}
+
+.about__pic {
+	padding-top: 150px;
+	height: 419px;
+	width: 546px;
+	transform: rotate(6deg);
+}
+
+.about__more-link {
+	display: flex;
+	align-items: center;
+}
+
+.link-text {
+	padding-right: 10px;
+}
+
+.link-btn {
+	height: 18px;
+	width: 18px;
+}
+
+/* about styles end */
