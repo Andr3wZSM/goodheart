@@ -1,7 +1,13 @@
 /*@font-face {
     font-family: 'Geometria';
-    src: url('/template/fonts');
-    }*/
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    	url('/template/fonts/Geometria-ExtraBold.eot') format('eot'),
+    	url('/template/fonts/Geometria-ExtraBold.ttf') format('ttf'),
+    	url('/template/fonts/Geometria-ExtraBold.woff') format('woff'),
+    	url('/template/fonts/Geometria-ExtraBold.woff2') format('woff2');
+}*/
 
 ul {
 	padding: 0;
@@ -9,8 +15,8 @@ ul {
 
 body {
 	color: #FFFFFF;
-	font-family: sans-serif;
-	font-weight: 400;
+	/*font-family: 'Geometria';
+	font-weight: 400;*/
 	font-size: 18px;
 	line-height: 21px;	
 }
@@ -59,7 +65,7 @@ body {
 	color: #C5D5E6;
 }
 
-.languages__list-item:hover {
+.languages__list-item:active {
 	color: #FFFFFF;
 }
 
@@ -70,15 +76,19 @@ body {
 .header__menu {
 	margin-top: 21px;
 	margin-right: 179px;
+	color: #C5D5E6;
 }
 
 .menu__list-item {
 	margin-right: 35px;
+	padding: 9px 0 4px 0;
 }
 
 .menu__list-item:last-child {
-	padding: 0 20px 0 28px;
-	background: linear-gradient(#6082D7, #E73453);
+	padding: 9px 20px 4px 28px;
+	background: linear-gradient(270deg, #6082D7 -81.69%, #E73453 100%);
+	border-radius: 5px;
+	color: #FFFFFF;	
 }
 
 .header__search {
@@ -93,6 +103,7 @@ body {
 
 .header__authorization {
 	margin-top: 30px;
+	color: #C5D5E6;
 }
 
 .languages__list {
@@ -140,5 +151,15 @@ body {
 	height: 18px;
 	width: 18px;
 }
+
+.about__help::before {
+	display: block;
+	content: '';
+	width: 50px;
+	height: 2px;
+	background-color: #FFFFFF;
+}
+
+
 
 /* about styles end */
