@@ -21,6 +21,10 @@ body {
 	line-height: 21px;	
 }
 
+button {
+	all: unset;
+}
+
 .container {
 	height: 100vh;
 	background-image: url('/template/img/start-bg.jpg');
@@ -121,15 +125,36 @@ body {
 	margin-left: 100px;
 }
 
-.about__more {
-	margin-bottom: 57px;
-	display: flex;
+.about__info {
+	color: #C5D5E6;
 }
 
-.about__more-title {
+.about__info img {
+	width: 18px;
+	height: 18px;
+}
+
+.info__title {
+	display: flex;
+	margin-bottom: 57px;
+}
+
+.info__title-text {
 	font-size: 64px;
+	color: #FFFFFF;
 	margin-right: 18px;
 }
+
+.info__title-link {
+	display: flex;
+	align-items: center;
+}
+
+.link-more {
+	margin-right: 10px;
+}
+
+
 
 .about__pic {
 	padding-top: 150px;
@@ -137,29 +162,4 @@ body {
 	width: 546px;
 	transform: rotate(6deg);
 }
-
-.about__more-link {
-	display: flex;
-	align-items: center;
-}
-
-.link-text {
-	padding-right: 10px;
-}
-
-.link-btn {
-	height: 18px;
-	width: 18px;
-}
-
-.about__help::before {
-	display: block;
-	content: '';
-	width: 50px;
-	height: 2px;
-	background-color: #FFFFFF;
-}
-
-
-
 /* about styles end */
