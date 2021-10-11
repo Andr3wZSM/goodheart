@@ -27,15 +27,17 @@ button {
 
 .container {
 	height: 100vh;
+	position: relative;
 	background-image: url('/template/img/start-bg.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center
+	background-position: center;
 }
 
 .wrapper-full {
+	
 	max-width: 1500px;
-	padding: 0 30px;
+	padding: 0 30px 0 30px;
 	margin: 0 auto;
 }
 
@@ -122,7 +124,8 @@ button {
 /* about styles start */
 .about {
 	display: flex;
-	margin-left: 100px;
+	margin-left: 70px;
+	/*margin-bottom: 138px;*/
 }
 
 .about__info {
@@ -136,7 +139,7 @@ button {
 
 .info__title {
 	display: flex;
-	margin-bottom: 57px;
+	margin-bottom: 77px;
 }
 
 .info__title-text {
@@ -147,19 +150,131 @@ button {
 
 .info__title-link {
 	display: flex;
-	align-items: center;
 }
 
 .link-more {
 	margin-right: 10px;
 }
 
+.info__acts::before {
+	display: block;
+	content: '';
+	background-color: #FFFFFF;
+	height: 2px;
+	width: 50px;
+	margin-bottom: 16.88px;
+}
 
+.info__acts {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 70px;
+}
+
+.info__acts-message {
+	width: 456px;
+	margin-bottom: 20px;
+	color: #FFFFFF;
+	line-height: 22px;
+}
+
+.info__acts-links {
+	display: flex;
+	align-items: center;
+}
+
+.links__link-how {
+	display: flex;
+	margin-right: 100px;
+	align-items: flex-start;
+	padding: 17px 0 11px 0;
+}
+
+.how-text {
+	margin-right: 8px;
+}
+
+.links__btn-now {
+	color: #FFFFFF;
+	padding: 17px 20px 11px 24px;
+	background: rgba(0, 0, 0, 0.2);
+	mix-blend-mode: normal;
+	/*box-shadow: 0px 0px 7px 2px #9D5E9A, 0px 0px 15px 10px #E53656;*/
+	border-radius: 10px;
+}
+
+.info__project::before {
+	display: block;
+	content: '';
+	background-color: #FFFFFF;
+	height: 2px;
+	width: 50px;
+	margin-bottom: 18px;
+}
+
+.info__project {
+	display: flex;
+	flex-direction: column;
+}
+
+.info__project-suggestion {
+	color: #FFFFFF;
+	margin-bottom: 35px;
+}
+
+.info__project-link {
+	display: flex;
+}
+
+.project-link__text {
+	margin-right: 13px;
+}
 
 .about__pic {
-	padding-top: 150px;
 	height: 419px;
 	width: 546px;
-	transform: rotate(6deg);
+	transform: translateY(125px);
 }
 /* about styles end */
+
+/* footer styles start */
+.footer {
+	position: absolute;
+	bottom: 0;
+	margin-left: 70px;
+	margin-bottom: 27px;
+	display: flex;
+	align-items: flex-end;
+}
+
+.footer__socials {
+	display: flex;
+}
+
+.socials__text {
+	margin-right: 14px;
+	color: #C5D5E6;
+}
+
+.socials__list {
+	display: flex;
+}
+
+.socials__list-item {
+	margin-right: 20px;
+}
+
+.socials__list-item:last-child {
+	margin-right: 0;
+}
+/* footer styles end */
+
+/* chat styles start */
+.chat {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 90px;
+	height: 90px;
+}
+/* chat styles  */
