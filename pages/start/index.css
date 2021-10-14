@@ -1,13 +1,11 @@
-/*@font-face {
-    font-family: 'Geometria';
+@font-face {
+    font-family: 'Geometria', 'Gilroy';
     font-style: normal;
     font-weight: 400;
     src: local(''),
-    	url('/template/fonts/Geometria-ExtraBold.eot') format('eot'),
     	url('/template/fonts/Geometria-ExtraBold.ttf') format('ttf'),
-    	url('/template/fonts/Geometria-ExtraBold.woff') format('woff'),
-    	url('/template/fonts/Geometria-ExtraBold.woff2') format('woff2');
-}*/
+    	url('/template/fonts/gilroy-light.otf') format('otf');
+}
 
 ul {
 	padding: 0;
@@ -15,8 +13,8 @@ ul {
 
 body {
 	color: #FFFFFF;
-	/*font-family: 'Geometria';
-	font-weight: 400;*/
+	font-family: 'Geometria';
+	font-weight: 400;
 	font-size: 18px;
 	line-height: 21px;	
 }
@@ -35,9 +33,8 @@ button {
 }
 
 .wrapper-full {
-	
-	max-width: 1500px;
-	padding: 0 30px 0 30px;
+	max-width: 1440px;
+	padding: 0 30px;
 	margin: 0 auto;
 }
 
@@ -63,10 +60,17 @@ button {
 
 .header__languages {
 	margin-top: 30px;
-	margin-right: 222px;
+	margin-right: auto;
+}
+
+.languages__list {
+	display: flex;
 }
 
 .languages__list-item {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 18px;
 	margin-right: 10px;
 	color: #C5D5E6;
 }
@@ -85,7 +89,14 @@ button {
 	color: #C5D5E6;
 }
 
+.menu__list {
+	display: flex;
+}
+
 .menu__list-item {
+	font-weight: 800;
+	font-size: 14px;
+	line-height: 18px;
 	margin-right: 35px;
 	padding: 9px 0 4px 0;
 }
@@ -108,16 +119,16 @@ button {
 }
 
 .header__authorization {
+	mix-blend-mode: normal;
+	opacity: 0.5;
 	margin-top: 30px;
 	color: #C5D5E6;
 }
 
-.languages__list {
-	display: flex;
-}
-
-.menu__list {
-	display: flex;
+.authorization__sign-in {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 18px;
 }
 /* header styles end */
 
@@ -139,11 +150,14 @@ button {
 
 .info__title {
 	display: flex;
+	align-items: center;
 	margin-bottom: 77px;
 }
 
 .info__title-text {
+	font-weight: 800;
 	font-size: 64px;
+	line-height: 81px;
 	color: #FFFFFF;
 	margin-right: 18px;
 }
@@ -153,6 +167,8 @@ button {
 }
 
 .link-more {
+	font-weight: 500;
+	line-height: 23px;
 	margin-right: 10px;
 }
 
@@ -172,10 +188,11 @@ button {
 }
 
 .info__acts-message {
+	font-family: 'Gilroy';
+	font-weight: 300;
 	width: 456px;
 	margin-bottom: 20px;
 	color: #FFFFFF;
-	line-height: 22px;
 }
 
 .info__acts-links {
@@ -191,15 +208,19 @@ button {
 }
 
 .how-text {
+	font-weight: 500;
+	line-height: 23px;
 	margin-right: 8px;
 }
 
 .links__btn-now {
 	color: #FFFFFF;
+	font-weight: 500;
+	line-height: 23px;
 	padding: 17px 20px 11px 24px;
 	background: rgba(0, 0, 0, 0.2);
 	mix-blend-mode: normal;
-	/*box-shadow: 0px 0px 7px 2px #9D5E9A, 0px 0px 15px 10px #E53656;*/
+	box-shadow: 0px 0px 7px 2px #9D5E9A, 0px 0px 15px 10px #E53656;
 	border-radius: 10px;
 }
 
@@ -218,6 +239,8 @@ button {
 }
 
 .info__project-suggestion {
+	font-family: 'Gilroy';
+	font-weight: 300;
 	color: #FFFFFF;
 	margin-bottom: 35px;
 }
@@ -227,19 +250,15 @@ button {
 }
 
 .project-link__text {
+	font-weight: 500;
+	line-height: 23px;
 	margin-right: 13px;
-}
-
-.about__pic {
-	height: 419px;
-	width: 546px;
-	transform: translateY(125px);
 }
 /* about styles end */
 
 /* footer styles start */
 .footer {
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	margin-left: 70px;
 	margin-bottom: 27px;
@@ -252,8 +271,11 @@ button {
 }
 
 .socials__text {
-	margin-right: 14px;
+	font-weight: 800;
+	font-size: 14px;
+	line-height: 18px;
 	color: #C5D5E6;
+	margin-right: 14px;
 }
 
 .socials__list {
@@ -274,7 +296,5 @@ button {
 	position: absolute;
 	right: 0;
 	bottom: 0;
-	width: 90px;
-	height: 90px;
 }
 /* chat styles  */
