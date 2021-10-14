@@ -34,7 +34,7 @@
 				</ul>
 			</nav>
 			<div class="header__search">
-				<img src="template/img/search-ico.png" alt="search" class="header__search-ico">
+				<img src="template/img/search-ico.png" alt="search" class="header__search-ico" onclick="myFunction()">
 			</div>
 			<div class="header__authorization">
 				<span class="authorization__sign-in">
@@ -103,5 +103,17 @@
 				<img src="template/img/chat.png" alt="chat" class="chat__link-img">
 			</a>
 		</div>
+
+		<!-- additional options start -->
+		<div class="search" id="search">
+			
+		</div>
+		<!-- additional options end -->
 	</div>
 </div>
+
+<script>
+	function myFunction() {
+		document.getElementById("search").style.display = "block";
+	}
+</script>

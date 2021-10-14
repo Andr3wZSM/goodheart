@@ -298,3 +298,17 @@ button {
 	bottom: 0;
 }
 /* chat styles  */
+
+/* search styles start */
+.search {
+	display: none;
+	position: absolute;
+	left: 30px;
+	top: 15px;
+	width: 1380px;
+	height: 60px;
+	background: rgba(197, 213, 230, 0.5);
+	backdrop-filter: blur(54.3656px);
+	border-radius: 10px;
+}
+/* search styles end */
