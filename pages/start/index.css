@@ -11,6 +11,14 @@ ul {
 	padding: 0;
 }
 
+button {
+	all: unset;
+}
+
+input {
+	all: unset;
+}
+
 body {
 	color: #FFFFFF;
 	font-family: 'Geometria';
@@ -19,9 +27,6 @@ body {
 	line-height: 21px;	
 }
 
-button {
-	all: unset;
-}
 
 .container {
 	height: 100vh;
@@ -304,6 +309,8 @@ button {
 	position: absolute;
 	right: 0;
 	bottom: 0;
+	margin-right: 10px;
+	margin-bottom: 10px;
 }
 /* chat styles  */
 
@@ -311,12 +318,22 @@ button {
 .search {
 	display: none;
 	position: absolute;
-	left: 30px;
+	left: 240px;
 	top: 15px;
 	width: 1380px;
+}
+
+.search__input {
+	width: 100%;
 	height: 60px;
 	background: rgba(197, 213, 230, 0.5);
 	backdrop-filter: blur(54.3656px);
 	border-radius: 10px;
+}
+
+.search__input-cross {
+	position: absolute;
+	height: 44px;
+	width: 44px;
 }
 /* search styles end */

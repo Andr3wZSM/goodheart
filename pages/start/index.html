@@ -3,7 +3,7 @@
 		<header class="header">
 			<div class="header__logo">
 				<a href="/start" class="header__logo-link">
-					<img src="template/img/svg/logo.svg" alt="heart" class="header__logo-pic">
+					<img src="template/img/logo.png" alt="heart" class="header__logo-pic">
 				</a>
 			</div>
 			<div class="header__languages">
@@ -36,7 +36,7 @@
 				</ul>
 			</nav>
 			<div class="header__search">
-				<img src="template/img/search-ico.png" alt="search" class="header__search-ico" onclick="myFunction()">
+				<img src="template/img/search-ico.png" alt="search" class="header__search-ico" onclick="showSearch()">
 			</div>
 			<div class="header__authorization">
 				<span class="authorization__sign-in">
@@ -44,7 +44,6 @@
 				</span>
 			</div>
 		</header>
-		
 		<section class="about">
 			<div class="about__info">
 				<div class="info__title">
@@ -79,7 +78,6 @@
 				</div>
 			</div>
 		</section>
-
 		<footer class="footer">
 			<div class="footer__socials">
 				<span class="socials__text">Розповісти всім:</span>
@@ -102,7 +100,6 @@
 				</ul>
 			</div>
 		</footer>
-
 		<div class="chat">
 			<a href="#" class="chat__link">
 				<img src="template/img/chat.png" alt="chat" class="chat__link-img">
@@ -111,14 +108,19 @@
 
 		<!-- additional options start -->
 		<div class="search" id="search">
-			
+			<input type="text" class="search__input" placeholder="Пошук" >
+			<img src="template/img/cross.png" alt="exit" class="search__input-cross" onclick="hideSearch()">
 		</div>
 		<!-- additional options end -->
 	</div>
 </div>
 
 <script>
-	function myFunction() {
-		document.getElementById("search").style.display = "block";
-	}
+function showSearch() {
+	document.getElementById("search").style.display = "block";
+}
+
+function hideSearch() {
+	document.getElementById("search").style.display = "none";	
+}
 </script>
