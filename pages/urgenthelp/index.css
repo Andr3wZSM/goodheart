@@ -139,7 +139,140 @@ body {
 /* header styles end */
 
 /* projects styles start */
+.titles__list {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 3px;
+}
 
+.titles__list-item {
+	font-weight: 800;
+	font-size: 64px;
+	line-height: 81px;
+	mix-blend-mode: normal;
+	opacity: 0.15;
+	margin-right: 100px;
+}
+
+.titles__list-item:active {
+	opacity: 1;
+}
+
+.titles__list-item:last-child {
+	margin-right: 0;
+}
+
+.list-item__amount {
+	font-family: Gilroy;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 22px;
+	color: #8492F3;
+}
+
+#titles__item-amount {
+	display: flex;
+	align-items: center;
+}
+
+#titles__list-link {
+	margin-right: 20px;
+}
+
+.projects__types-of-help {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 26px;
+	margin-bottom: 48px;
+}
+
+.types-of-help__text {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 18px;
+	color: #C5D5E6;
+	margin-right: 8px;
+}
+
+.types-of-help__button {
+	width: 18px;
+	height: 18px;
+}
+
+.projects__content {
+	margin-left: 120px;
+}
+
+/* table styles start */
+.content__table {
+	border-spacing: 0;
+}
+
+.content__table-div2 {
+	border-bottom: solid 1px #D8D8D8;
+	width: 838px;
+	padding-left: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.table-div__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.table-div__container-p1 {
+	display: flex;
+	flex-direction: column;
+}
+
+.table-div__container-p2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.div__date {
+	font-family: Gilroy;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 14px;
+	color: #C5D5E6;
+	margin-bottom: 18px;
+}
+
+.div__title {
+	margin-bottom: 5px;
+}
+
+.div__content {
+	font-family: Gilroy;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 16px;
+	color: #FFFFFF;
+	margin-bottom: 65px;
+}
+
+.div__summ {
+	font-family: Gilroy;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 16px;
+	color: #B4C4D8;
+	mix-blend-mode: normal;
+	opacity: 0.5;
+}
+
+.container-2__list {
+	height: 80px;
+	display: flex;	
+	flex-direction: column;
+	justify-content: space-between;
+}
+/* table styles end */
 /* projects styles end */
 
 /* chat styles start */
