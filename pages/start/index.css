@@ -141,17 +141,13 @@ body {
 .about {
 	display: flex;
 	margin-left: 70px;
-	/*margin-bottom: 138px;*/
 }
 
 .about__info {
 	color: #C5D5E6;
 }
 
-.btn-more {
-	width: 18px;
-	height: 18px;
-}
+
 
 .info__title {
 	display: flex;
@@ -167,15 +163,20 @@ body {
 	margin-right: 18px;
 }
 
-.info__title-link {
+.info__title-more {
 	display: flex;
 	align-items: center;
 }
 
-.link-more {
+.title-more__text {
 	font-weight: 500;
 	line-height: 23px;
 	margin-right: 5px;
+}
+
+.title-more__link {
+	width: 18px;
+	height: 18px;
 }
 
 .info__acts::before {
@@ -206,6 +207,7 @@ body {
 	align-items: center;
 }
 
+
 .links__link-how {
 	display: flex;
 	margin-right: 100px;
@@ -213,16 +215,17 @@ body {
 	padding: 17px 0 11px 0;
 }
 
-.how-text {
+.link-how__text {
 	font-weight: 500;
 	line-height: 23px;
 	margin-right: 8px;
 }
 
-.how-img {
+.link-how__router {
 	width: 18px;
 	height: 18px;
 }
+
 
 .links__btn-now {
 	padding: 17px 20px 11px 24px;
@@ -258,17 +261,17 @@ body {
 	margin-bottom: 35px;
 }
 
-.info__project-link {
+.info__project-add {
 	display: flex;
 	align-items: center;
 }
 
-.project-link__img {
+.project-add__link {
 	width: 18px;
 	height: 18px;
 }
 
-.project-link__text {
+.project-add__text {
 	font-weight: 500;
 	line-height: 23px;
 	margin-right: 13px;
