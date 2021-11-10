@@ -228,7 +228,7 @@ body {
 .info__container {
 	display: flex;
 	flex-direction: column;
-	max-width: 544px;
+	max-width: 600px;
 }
 
 .project-info__date {

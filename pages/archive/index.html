@@ -3,7 +3,7 @@
 		<header class="header">
 			<div class="header__logo">
 				<a href="/start" class="header__logo-link">
-					<img src="template/img/uh-logo.png" alt="heart" class="header__logo-pic">
+					<img src="template/img/logo.png" alt="heart" class="header__logo-pic">
 				</a>
 			</div>
 			<div class="header__languages">
@@ -21,10 +21,10 @@
 			</div>
 			<nav class="header__menu">
 				<ul class="menu__list">
-					<li class="menu__list-item">
+					<li class="menu__list-item" id="menu__projects">
 						<a href="/projects" class="menu__list-link">Проекти</a>
 					</li>
-					<li class="menu__list-item">
+					<li class="menu__list-item" id="menu__archive">
 						<a href="/archive" class="menu__list-link">Архів</a>
 					</li>
 					<li class="menu__list-item">
@@ -35,7 +35,7 @@
 					</li>
 				</ul>
 			</nav>
-
+			
 			<div class="header__search">
 				<img src="template/img/search-ico.png" alt="search" class="header__search-ico" onclick="myFunction()">
 			</div>
@@ -70,13 +70,22 @@
 
 			<div class="projects__content">
 				<div class="content__row">
-					<img src="template/img/children-1.png" alt="operation for child" class="row__project-visual" id="project-visual-1">
+					<img src="template/img/archive-children-1.png" alt="Organizing a trip for orphans to a children's camp in Bulgaria" class="row__project-visual" id="project-visual-1">
 					<div class="row__project-info">
 						<div class="info__container">
-							<span class="project-info__date">04.05.2017</span>
-							<span class="project-info__title">Операція дитині, яка постраждала в зоні АТО</span>
-							<span class="project-info__desc">Необхідно терміново зробити операцію або зібрати 40 000 грн Василю, який був поранений в зоні АТО</span>
-							<span class="project-info__sum">Зібрано <span class="info__sum-num">18 000</span> з <span class="info__sum-num">40 000</span> UAH</span>	
+							<span class="project-info__date">07.02.2017</span>
+							<span class="project-info__title">Організація поїздки сиріт до дитячого табору у Болгарії</span>
+							<span class="project-info__desc">Перебуваючи у сиротинцях ці діти мають різного роду матеріальні та нематеріальні потреби, якими зазвичай ніхто не займається. Ті, хто має займатися утриманням дитячих будинків, опікою над дітьми часто забувають про свій обов’язок або ж отримують недостатнє фінансування від держави. Тому вся надія цих діточок покладається на небайдужих людей, волонтерів, благодійні фонди.</span>
+							<div class="project-info__assistance">
+								<span class="assistance__text">Допомогли: Ім’я Фамілія, ВАТ “Фірма 1”, Ім’я Фамілія 4, ВАТ “Фірма 3”</span>
+								<a href="#" class="assistance__more-link">
+									<div class="assistance__more-dots">
+										<div class="assistance__more-dot"></div>
+										<div class="assistance__more-dot"></div>
+										<div class="assistance__more-dot"></div>
+									</div>
+								</a>
+							</div>	
 						</div>
 						<div class="info__actions">
 							<a href="#" class="actions__link-1">
@@ -89,20 +98,29 @@
 					</div>
 				</div>
 				<div class="content__row">
-					<img src="template/img/children-2.png" alt="operation for child" class="row__project-visual">
+					<img src="template/img/archive-children-2.png" alt="Football section for primary school children" class="row__project-visual">
 					<div class="row__project-info">
 						<div class="info__container">
-							<span class="project-info__date">04.05.2017</span>
-							<span class="project-info__title">Ремонт опалення у дитячому будинку</span>
+							<span class="project-info__date">04.01.2017</span>
+							<span class="project-info__title">Секція з футболу для дітей початкових класів</span>
 						</div>
 					</div>
 				</div>
 				<div class="content__row">
-					<img src="template/img/children-3.png" alt="operation for child" class="row__project-visual">
+					<img src="template/img/archive-children-3.png" alt="Adaptation of children from the anti-terrorist operation zone" class="row__project-visual">
 					<div class="row__project-info">
 						<div class="info__container">
-							<span class="project-info__date">04.05.2017</span>
-							<span class="project-info__title">Терміново неохідно закупити до лікарень дитячий “рідкісний препарат” від укусів кліщів</span>	
+							<span class="project-info__date">03.01.2017</span>
+							<span class="project-info__title">Адаптація дітей із зони АТО</span>	
+						</div>
+					</div>
+				</div>
+				<div class="content__row">
+					<img src="template/img/children-3.png" alt="It is necessary to buy medicine in an orphanage" class="row__project-visual">
+					<div class="row__project-info">
+						<div class="info__container">
+							<span class="project-info__date">23.11.2016</span>
+							<span class="project-info__title">Необхідно купити ліки у дитячий будинок</span>	
 						</div>
 					</div>
 				</div>
@@ -111,14 +129,14 @@
 
 		<div class="chat">
 			<a href="#" class="chat__link">
-				<img src="template/img/uh-chat.png" alt="chat" class="chat__link-img">
+				<img src="template/img/chat.png" alt="chat" class="chat__link-img">
 			</a>
 		</div>
 
 		<!-- additional options start -->
-		<!-- <div class="search" id="search">
+		<div class="search" id="search">
 			
-		</div> -->
+		</div>
 		<!-- additional options end -->
 	</div>
 </div>

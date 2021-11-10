@@ -31,7 +31,7 @@ body {
 .container {
 	height: 100vh;
 	position: relative;
-	background-image: url('/template/img/urgenthelp-bg.jpg');
+	background-image: url('/template/img/blue-bg.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -108,9 +108,20 @@ body {
 
 .menu__list-item:last-child {
 	padding: 9px 20px 4px 28px;
+	background: linear-gradient(270deg, #6082D7 -81.69%, #E73453 100%);
+	border-radius: 5px;
+	color: #FFFFFF;	
+}
+
+#menu__projects {
+	margin-right: 10px;
+}
+
+#menu__archive {
+	padding: 8px 20px 4px 20px;
 	background: rgba(0, 0, 0, 0.2);
 	border-radius: 5px;
-	color: #FFFFFF;
+	margin-right: 10px;
 }
 
 .header__search {
@@ -228,7 +239,7 @@ body {
 .info__container {
 	display: flex;
 	flex-direction: column;
-	max-width: 544px;
+	max-width: 600px;
 }
 
 .project-info__date {
@@ -252,20 +263,39 @@ body {
 	font-size: 14px;
 	line-height: 16px;
 	color: #FFFFFF;
-	margin-bottom: 65px;
 }
 
-.project-info__sum {
+.project-info__assistance {
+	display: flex;
+	align-items:  center;
+	margin-bottom: 10px;
+	margin-top: auto;
+}
+
+.assistance__text {
 	font-family: Gilroy;
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 16px;
 	color: #B4C4D8;
+	opacity: 0.5;
+	margin-right: 20px;
 }
 
-.info__sum-num {
-	font-size: 18px;
-	line-height: 21px;
+.assistance__more-dots {
+	display: flex;
+}
+
+.assistance__more-dot {
+	width: 5px;
+	height: 5px;
+	background: #C5D5E6;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+
+.assistance__more-dot:last-child {
+	margin-right: 0;
 }
 
 .info__actions {
@@ -291,7 +321,7 @@ body {
 /* chat styles  */
 
 /* search styles start */
-/*.search {
+.search {
 	display: none;
 	position: absolute;
 	left: 30px;
@@ -301,5 +331,5 @@ body {
 	background: rgba(197, 213, 230, 0.5);
 	backdrop-filter: blur(54.3656px);
 	border-radius: 10px;
-}*/
+}
 /* search styles end */
