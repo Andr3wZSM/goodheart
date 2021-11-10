@@ -289,9 +289,10 @@ body {
 .assistance__more-dot {
 	width: 5px;
 	height: 5px;
-	background: #C5D5E6;
 	border-radius: 50%;
 	margin-right: 5px;
+	background: #C5D5E6;
+	opacity: 0.5;
 }
 
 .assistance__more-dot:last-child {
@@ -299,14 +300,36 @@ body {
 }
 
 .info__actions {
+	width: 120px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 	margin-bottom: 10px;
 }
 
-.actions__img-1 {
+.info__actions__option {
+	display: flex;
 	margin-bottom: 20px;
+}
+
+.info__actions__option:last-child {
+	margin-bottom: 0;
+}
+
+.option__text {
+	font-family: Gilroy;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 14px;
+	text-align: right;
+	color: #C5D5E6;
+	margin-right: 10px;
+}
+
+.option__img {
+	width: 30px;
+	height: 30px;
 }
 /* projects styles end */
 
