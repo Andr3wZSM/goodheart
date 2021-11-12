@@ -110,7 +110,8 @@ body {
 	padding: 9px 20px 4px 28px;
 	background: linear-gradient(270deg, #6082D7 -81.69%, #E73453 100%);
 	border-radius: 5px;
-	color: #FFFFFF;	
+	color: #FFFFFF;
+	margin-right: 0;
 }
 
 #menu__archive {
