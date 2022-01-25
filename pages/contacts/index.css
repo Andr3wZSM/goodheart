@@ -3,8 +3,8 @@
     font-style: normal;
     font-weight: 400;
     src: local(''),
-    	url('/template/fonts/Geometria-ExtraBold.ttf') format('ttf'),
-    	url('/template/fonts/gilroy-light.otf') format('otf');
+	url('/template/fonts/Geometria-ExtraBold.ttf') format('ttf'),
+	url('/template/fonts/gilroy-light.otf') format('otf');
 }
 
 ul {
@@ -27,7 +27,6 @@ body {
 	line-height: 21px;	
 }
 
-
 .container {
 	height: 100vh;
 	position: relative;
@@ -38,7 +37,7 @@ body {
 }
 
 .wrapper-full {
-	max-width: 1440px;
+	max-width: 1500px;
 	padding: 0 30px;
 	margin: 0 auto;
 }

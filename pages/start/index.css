@@ -27,17 +27,32 @@ body {
 	line-height: 21px;	
 }
 
-.container {
-	height: 100vh;
-	position: relative;
-	background-image: url('/template/img/start-bg.jpg');
+.background {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	clip-path: polygon(100% 0, 100% 27%, 27% 100%, 0 100%, 0 0);
+	background: linear-gradient(321.24deg, #4792E1 -91.81%, #4174B3 -31.53%, #363B5D 82.08%);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	z-index: 0;
+}
+
+.container {
+	height: 100vh;
+	position: relative;
+	z-index: 1;
+}
+
+.info__img {
+	position: absolute;
+	right: 10px;
+	bottom: 50px;
 }
 
 .wrapper-full {
-	max-width: 1440px;
+	max-width: 1500px;
 	padding: 0 30px;
 	margin: 0 auto;
 }
@@ -142,15 +157,12 @@ body {
 
 /* about styles start */
 .about {
-	display: flex;
 	margin-left: 70px;
 }
 
 .about__info {
 	color: #C5D5E6;
 }
-
-
 
 .info__title {
 	display: flex;
