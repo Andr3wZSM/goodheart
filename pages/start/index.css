@@ -377,6 +377,12 @@ body {
 }
 
 .search__result {
+	display: none;
+	margin-top: 20px;
 	width: 1380px;
+	height: 360px;
+	background: rgba(197, 213, 230, 0.5);
+	backdrop-filter: blur(54.3656px);
+	border-radius: 10px;
 }
 /* search styles end */

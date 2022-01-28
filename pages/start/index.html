@@ -123,18 +123,19 @@
 		<!-- additional options start -->
 		<div class="search" id="search">
 			<div class="search__inner">
-				<input type="text" class="search__input" placeholder="Пошук" >
+				<input type="text" class="search__input" id="search__input" placeholder="Пошук" >
 				<img src="template/img/cross.png" alt="exit" class="search__input-cross" onclick="hideSearch()">
 			</div>
-		</div>
-
-		<div class="search__result">
-			
+			<div class="search__result" id="search__result">
+				
+			</div>
 		</div>
 		<!-- additional options end -->
 	</div>
 </div>
 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 function showSearch() {
 	document.getElementById("search").style.display = "block";
@@ -143,4 +144,14 @@ function showSearch() {
 function hideSearch() {
 	document.getElementById("search").style.display = "none";	
 }
+
+$(document).ready(function () {
+    $("#search__input").keyup(function () {
+        if(this.value == "Гроші на ліки"){
+            $('#search__result').css("display", "block");
+        }else{
+            $('#search__result').css("display", "none");
+        }
+    });
+});
 </script>
