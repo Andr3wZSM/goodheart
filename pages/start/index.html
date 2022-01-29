@@ -120,17 +120,39 @@
 			</a>
 		</div>
 
-		<!-- additional options start -->
+		<!-- search start -->
 		<div class="search" id="search">
 			<div class="search__inner">
 				<input type="text" class="search__input" id="search__input" placeholder="Пошук" >
 				<img src="template/img/cross.png" alt="exit" class="search__input-cross" onclick="hideSearch()">
 			</div>
 			<div class="search__result" id="search__result">
-				
+				<div class="search__result-row">
+					<div class="result-row__column column-category">
+						<span class="column-category__text">Проекти</span>
+					</div>
+					<div class="result-row__column category-item">
+						<span class="category-item__title">Діти</span>
+						<span class="category-item__desc" id="desc1">Для операції на сердце маленькому хлопчику, необхідно зібрати гроші на ліки</span>
+						<span class="category-item__desc" id="desc2">Збираємо гроші на лікування п’ятирічного Василя, який став жертвою ДТП </span>
+					</div>
+					<div class="result-row__column category-item">
+						<span class="category-item__title">Війна</span>
+						<span class="category-item__desc">Необхідно зібрати ліки для поранених бійців із зони АТО</span>
+					</div>
+				</div>
+				<div class="search__result-row">
+					<div class="result-row__column column-category">
+						<span class="column-category__text">Архів</span>
+					</div>
+					<div class="result-row__column">
+						<span class="category-item__title">Діти</span>
+						<span class="category-item__desc">Необхідно купити ліки для дитячого будинку в місті Київ</span>
+					</div>
+				</div>
 			</div>
 		</div>
-		<!-- additional options end -->
+		<!-- search end -->
 	</div>
 </div>
 
@@ -155,3 +177,4 @@ $(document).ready(function () {
     });
 });
 </script>
+
