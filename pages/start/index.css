@@ -435,6 +435,10 @@ body {
 	left: 0;
 }
 
+#category-item::after {
+	all: unset;
+} 
+
 .category-item__title {
 	margin-bottom: 15px;
 }
@@ -466,6 +470,4 @@ body {
 	margin-top: 6px;
 	padding-bottom: 40px;
 }
-
-
 /* search styles end */
