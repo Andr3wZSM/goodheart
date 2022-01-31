@@ -61,6 +61,7 @@ body {
 .header__logo-pic {
 	height: 32.54px;
 	width: 36px;
+	content: url('template/img/uh-logo.png');
 }
 
 .header__languages {
