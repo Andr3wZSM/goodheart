@@ -22,7 +22,7 @@
 			</div>
 			<div class="projects__types-of-help">
 				<span class="types-of-help__text">Види допомоги</span>
-				<a href="#" class="types-of-help__link">
+				<a class="types-of-help__link" onclick="toggle()">
 					<img src="template/img/colorful-dd.png" class="types-of-help__button" alt="more">	
 				</a>
 			</div>
@@ -90,16 +90,74 @@
 			</a>
 		</div>
 
-		<!-- additional options start -->
-		<div class="search" id="search">
-			
+
+		
+		<img src="template/img/cross.png" alt="" class="popup-close">
+		
+		<div class="popup">
+			<span class="popup__title">Види допомоги</span>
+			<div class="popup__items">
+				<div class="popup__item">
+					<div class="item__info">
+						<img src="template/img/svg/types-of-help_item-1.svg" alt="Зробити" class="item__img">
+						<span class="item__title">Зробити</span>	
+					</div>
+					<div class="item__text">
+						<span class="item__text-desc">
+							Натискайте цю кнопку,
+							якщо Ви хочете зробити,
+							наприклад: ремонт у 
+							дитячому будинку,
+							складну операцію,
+							побудувати дитячий
+							майданчик або побудувати житло
+							для переселенців і тд.
+						</span>
+						<span class="item__text-desc">
+							Ця кнопка, для організацій, які можуть взяти на себе відповідальність за увесь проект.
+						</span>
+					</div>
+				</div>
+				<div class="popup__item">
+					<div class="item__info">
+						<img src="template/img/svg/types-of-help_item-2.svg" alt="Фінансова допомога" class="item__img">
+						<span class="item__title">Фінансова допомога</span>	
+					</div>
+					<div class="item__text">
+						<span class="item__text-desc">
+							Перераховуйте гроші тим, хто дійсно потребує цього.
+						</span>
+					</div>
+				</div>
+				<div class="popup__item">
+					<div class="item__info">
+						<img src="template/img/svg/types-of-help_item-3.svg" alt="Матеріальна допомога" class="item__img">
+						<span class="item__title">Матеріальна допомога</span>	
+					</div>
+					<div class="item__text">
+						<span class="item__text-desc">
+							Зберіть ліки, речі, їжу, іграшки та інше, для тих, кому це необхідно.
+						</span>
+					</div>
+				</div>
+				<div class="popup__item">
+					<div class="item__info">
+						<img src="template/img/svg/types-of-help_item-4.svg" alt="Волонтерство" class="item__img">
+						<span class="item__title">Волонтерство</span>	
+					</div>
+					<div class="item__text">
+						<span class="item__text-desc">
+							Допоможіть ділом або професійними навичками. Підтримайте проекти своєю роботою.
+						</span>
+					</div>
+				</div>
+
+			</div>
 		</div>
-		<!-- additional options end -->
+
 	</div>
 </div>
 
 <script>
-	function myFunction() {
-		document.getElementById("search").style.display = "block";
-	}
+	
 </script>
