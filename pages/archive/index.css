@@ -352,7 +352,7 @@ body {
 /* individual-entity-form styles start */
 .ie-form {
 	position: absolute;
-	top: 50%;
+	top: 70%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 1340px;
@@ -426,6 +426,13 @@ body {
 	align-items: flex-start;	
 }
 
+/* row margin */
+.enter-data__row {
+	margin-bottom: 33px;
+}
+
+
+
 /* name styles start */
 .personal-part__name {
 	display: flex;
@@ -459,13 +466,6 @@ body {
 
 
 
-/* row margin */
-.enter-data__row {
-	margin-bottom: 33px;
-}
-
-
-
 /* location styles start */
 .general-part__location {
 	display: flex;
@@ -484,5 +484,50 @@ body {
 	max-width: 180px;
 }
 
+
+
+.choose-help__subtitle {
+	font-family: 'Gilroy';
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 21px;
+	color: #363B5D;
+}
+
+.choose-help__elements {
+	margin-top: 40px;
+	display: flex;
+	padding: 0 20px;
+}
+
+.help-element-img {
+	width: 80px;
+	height: 80px;
+	margin-right: 20px;
+}
+
+.elements__element {
+	display: flex;
+	align-items: center;
+	max-width: 275px;
+	margin-right: auto;
+}
+
+.elements__element:last-child {
+	margin-right: 0;	
+}
+
+.elements__element-title {
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 23px;
+	color: #363B5D;
+	text-align: left;
+	max-width: 130px;
+	color: #C5D5E6;
+}
+.el-finance__title {
+	color: #363B5D;
+}
 
 /* individual-entity-form styles end */
