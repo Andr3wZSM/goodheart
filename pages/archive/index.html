@@ -120,29 +120,60 @@
 
 			<div class="ie-form__enter-data">
 				<div class="enter-data__personal-part">
-					<div class="personal-part__name">
-						<div class="name__first-name">
+					<div class="personal-part__name enter-data__row">
+						<div class="name__first-name row-item">
 							<span class="first-name__label">Ім’я</span>
-							<input type="text" class="first-name__input">
+							<input type="text" class="first-name__input name__input">
 						</div>
-						<div class="name__last-name">
+						<div class="name__last-name row-item">
 							<span class="last-name__label">Фамілія</span>
-							<input type="text" class="last-name__input">
+							<input type="text" class="last-name__input name__input">
 						</div>
 					</div>
-					<div class="personal-part__company">
-						<div class="company__text-part">
-							
+					<div class="personal-part__company enter-data__row">
+						<div class="company__text-part row-item">
+							<span class="company__label">Назва компаніі, організації</span>
+							<input type="text" class="company__input">
 						</div>
 						<div class="company__logo-part">
-							logo-part.
-
-							+  Логотип
+							<a href="" class="logo-part__link">
+								<span class="logo-part__link-text">+  Логотип</span>
+							</a>
 						</div>
 					</div>
+					<div class="personal-part__email enter-data__row row-item">
+						<span class="email__label">Email-адрес</span>
+						<input type="text" class="email__input">
+					</div>
+					<div class="personal-part__phone enter-data__row row-item">
+						<span class="phone__label">Номер телефону</span>
+						<input type="text" class="phone__input">
+					</div>
 				</div>
+
 				<div class="enter-data__general-part">
-					
+					<div class="general-part__country enter-data__row row-item">
+						<span class="country__label">Країна</span>
+						<input type="text" class="country__input">
+					</div>
+					<div class="general-part__location enter-data__row">
+						<div class="location__town row-item">
+							<span class="town__label">Місто</span>
+							<input type="text" class="town__input location__input">
+						</div>
+						<div class="location__state row-item">
+							<span class="state__label">Штат, район</span>
+							<input type="text" class="state__input location__input">
+						</div>
+					</div>
+					<div class="general-part__address enter-data__row row-item">
+						<span class="address__label">Адреса</span>
+						<input type="text" class="address__input">
+					</div>
+					<div class="general-part__zip-code enter-data__row row-item">
+						<span class="zip-code__label">Поштовий індекс</span>
+						<input type="text" class="zip-code__input">
+					</div>
 				</div>
 			</div>
 		</div>

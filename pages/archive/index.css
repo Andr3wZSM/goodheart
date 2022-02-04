@@ -360,8 +360,22 @@ body {
 	box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.2);
 	border-radius: 15px;
 	text-align: center;
-	color: #939AA3;
 	padding: 50px 100px 80px;
+
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 18px;
+	color: #939AA3;
+}
+
+.ie-form input {
+	width: 400px;
+	height: 40px;
+	background-color: #C5D5E6;
+	mix-blend-mode: normal;
+	opacity: 0.2;
+	border-radius: 5px;
+	padding: 0px 10px;
 }
 
 .ie-form__title {
@@ -395,6 +409,79 @@ body {
 
 .switch-element {
 	padding: 9px 22px;
+}
+
+.ie-form__enter-data {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 70px;
+}
+
+
+
+/* group of label and input */
+.row-item {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;	
+}
+
+/* name styles start */
+.personal-part__name {
+	display: flex;
+}
+
+.name__first-name {
+	margin-right: 20px;
+}
+
+.name__input {
+	max-width: 180px;
+}
+/* name styles end */
+
+
+
+/* company styles start */
+.personal-part__company {
+	display: flex;
+}
+
+.company__text-part {
+	margin-right: 20px;
+}
+
+.company__logo-part {
+	padding-top: 28px;
+	color: #4A90E2;
+}
+/* company styles end */
+
+
+
+/* row margin */
+.enter-data__row {
+	margin-bottom: 33px;
+}
+
+
+
+/* location styles start */
+.general-part__location {
+	display: flex;
+}
+
+.location__town {
+	margin-right: 20px;
+}
+
+.location__input {
+	max-width: 180px;
+}
+/* location styles end */
+
+.zip-code__input {
+	max-width: 180px;
 }
 
 
