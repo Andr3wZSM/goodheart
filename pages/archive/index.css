@@ -368,16 +368,6 @@ body {
 	color: #939AA3;
 }
 
-.ie-form input {
-	width: 400px;
-	height: 40px;
-	background-color: #C5D5E6;
-	mix-blend-mode: normal;
-	opacity: 0.2;
-	border-radius: 5px;
-	padding: 0px 10px;
-}
-
 .ie-form__title {
 	font-weight: 800;
 	font-size: 64px;
@@ -415,6 +405,16 @@ body {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 70px;
+}
+
+.enter-data-input {
+	width: 400px;
+	height: 40px;
+	background-color: #C5D5E6;
+	mix-blend-mode: normal;
+	opacity: 0.2;
+	border-radius: 5px;
+	padding: 0px 10px;
 }
 
 
@@ -498,6 +498,7 @@ body {
 	margin-top: 40px;
 	display: flex;
 	padding: 0 20px;
+	margin-bottom: 23px;
 }
 
 .help-element-img {
@@ -529,5 +530,109 @@ body {
 .el-finance__title {
 	color: #363B5D;
 }
+
+.ie-form__finance-help {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	text-align: left;
+	border-radius: 15px;
+	border: 1px solid #C5D5E6;
+	margin-bottom: 52px;
+	z-index: 0;
+}
+
+.finance-help__triangle {
+	display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: -12px;
+    left: 300px;
+	clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+	transform: rotate(135deg);
+	border-radius: 0 0 0 0.5em;
+	border: inherit;
+	background-color: #fff;
+	z-index: 10;
+}
+
+.payment-methods__card-items {
+	max-width: 550px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+	grid-gap: 20px;
+	align-items: stretch;
+	margin-top: 6px;
+}
+
+.enter-data__card-data {
+	background-color: #C5D5E6;
+	border-radius: 15px;
+	padding: 20px 24px;
+	color:  #FFFFFF;
+}
+
+.enter-data__card-data {
+	max-width: 375px;
+	margin-top: 6px;
+}
+
+.card-number__inputs {
+	display: flex;
+	margin-bottom: 30px;
+}
+
+.card-number__input {
+	max-width: 62px;
+	height: 40px;
+	background-color: #F3F7FA;
+	border-radius: 5px;
+	margin-right: 10px;
+	padding: 0 6px;
+	color: #000000;
+}
+
+.card-number__input:last-child {
+	margin-right: 0;
+}
+
+.card-data__other-data {
+	display: flex;
+	justify-content: space-between;
+}
+
+.other-data__item {
+	max-width: 130px;
+}
+
+.other-data__input {
+	max-width: 118px;
+	height: 40px;
+	border-radius: 5px;
+	background-color: #F3F7FA;
+	padding: 0 6px;
+	color: #000000;
+}
+
+
+.ie-form__submit-block {
+	padding: 20px 0;
+}
+
+.submit-block__btn {
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 23px;
+	color: #FFFFFF !important;
+	background: linear-gradient(46.62deg, #E53656 21.87%, #6082D8 124.73%);
+	box-shadow: 0px 0px 15px 5px rgba(229, 54, 86, 0.4);
+	border-radius: 10px;
+	padding: 20px 100px;	
+}
+
+
+
 
 /* individual-entity-form styles end */
