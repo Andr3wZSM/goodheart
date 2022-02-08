@@ -252,3 +252,319 @@ body {
 	border-radius: 10px;
 }
 /* search styles end */
+
+
+
+
+/* legal-entity-form styles start */
+.popup-close {
+	/*display: none;*/
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	right: 50px;
+	top: 30px;
+}
+
+.le-form {
+	/*display: none;*/
+	position: absolute;
+	top: 100px;
+	left: 50px;
+	/*transform: translate(-50%, -50%);*/
+	width: 1340px;
+	background: #FFFFFF;
+	box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.2);
+	border-radius: 15px;
+	text-align: center;
+	padding: 50px 100px 80px;
+
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 18px;
+	color: #939AA3;
+}
+
+.le-form__title {
+	font-weight: 800;
+	font-size: 64px;
+	line-height: 81px;
+	color: #363B5D;
+}
+
+.le-form__switch {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.le-form__switch-left {
+	border-radius: 5px 0px 0px 5px;
+	border: 2px solid #363B5D;
+	background: #363B5D;
+	color: #FFFFFF;
+}
+
+.le-form__switch-right {
+	border-radius: 0px 5px 5px 0px;
+	border: 2px solid #363B5D;
+	color: #363B5D;
+}
+
+.switch-element {
+	padding: 9px 22px;
+}
+
+.le-form__enter-data {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 70px;
+}
+
+.enter-data-input {
+	width: 400px;
+	height: 40px;
+	background-color: #C5D5E6;
+	mix-blend-mode: normal;
+	opacity: 0.2;
+	border-radius: 5px;
+	padding: 0px 10px;
+}
+
+
+
+/* group of label and input */
+.row-item {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;	
+}
+
+/* row margin */
+.enter-data__row {
+	margin-bottom: 33px;
+}
+
+/* name styles start */
+.personal-part__name {
+	display: flex;
+}
+
+.name__first-name {
+	margin-right: 20px;
+}
+
+.name__input {
+	max-width: 180px;
+}
+/* name styles end */
+
+/* company styles start */
+.personal-part__company {
+	display: flex;
+}
+
+.company__text-part {
+	margin-right: 20px;
+}
+
+.company__logo-part {
+	padding-top: 28px;
+	color: #4A90E2;
+}
+/* company styles end */
+
+
+/* location styles start */
+.general-part__location {
+	display: flex;
+}
+
+.location__town {
+	margin-right: 20px;
+}
+
+.location__input {
+	max-width: 180px;
+}
+/* location styles end */
+
+.zip-code__input {
+	max-width: 180px;
+}
+
+/* bank styles start */
+.legal-part-1__bank-data {
+	display: flex;
+}
+
+.bank-name__input {
+	margin-right: 20px;
+}
+
+.bank-data__input {
+	max-width: 180px;
+}
+
+.legal-part-2__other-bank-data {
+	display: flex;
+}
+
+.bank-item {
+	margin-right: 20px;
+}
+/* bank styles end */
+
+
+
+.choose-help__subtitle {
+	font-family: 'Gilroy';
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 21px;
+	color: #363B5D;
+}
+
+.choose-help__elements {
+	margin-top: 40px;
+	display: flex;
+	padding: 0 20px;
+	margin-bottom: 23px;
+}
+
+.help-element-img {
+	width: 80px;
+	height: 80px;
+	margin-right: 20px;
+}
+
+.elements__element {
+	display: flex;
+	align-items: center;
+	max-width: 275px;
+	margin-right: auto;
+}
+
+.elements__element:last-child {
+	margin-right: 0;	
+}
+
+.elements__element-title {
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 23px;
+	color: #363B5D;
+	text-align: left;
+	max-width: 130px;
+	color: #C5D5E6;
+}
+.el-finance__title {
+	color: #363B5D;
+}
+
+.le-form__finance-help {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	text-align: left;
+	border-radius: 15px;
+	border: 1px solid #C5D5E6;
+	margin-bottom: 52px;
+	z-index: 0;
+}
+
+.finance-help__triangle {
+	display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: -12px;
+    left: 300px;
+	clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+	transform: rotate(135deg);
+	border-radius: 0 0 0 0.5em;
+	border: inherit;
+	background-color: #fff;
+	z-index: 10;
+}
+
+.payment-methods__card-items {
+	max-width: 550px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+	grid-gap: 20px;
+	align-items: stretch;
+	margin-top: 6px;
+}
+
+.enter-data__card-data {
+	background-color: #C5D5E6;
+	border-radius: 15px;
+	padding: 20px 24px;
+	color:  #FFFFFF;
+}
+
+.enter-data__card-data {
+	max-width: 375px;
+	margin-top: 6px;
+}
+
+.card-number__inputs {
+	display: flex;
+	margin-bottom: 30px;
+}
+
+.card-number__input {
+	max-width: 62px;
+	height: 40px;
+	background-color: #F3F7FA;
+	border-radius: 5px;
+	margin-right: 10px;
+	padding: 0 6px;
+	color: #000000;
+}
+
+.card-number__input:last-child {
+	margin-right: 0;
+}
+
+.card-data__other-data {
+	display: flex;
+	justify-content: space-between;
+}
+
+.other-data__item {
+	max-width: 130px;
+}
+
+.other-data__input {
+	max-width: 118px;
+	height: 40px;
+	border-radius: 5px;
+	background-color: #F3F7FA;
+	padding: 0 6px;
+	color: #000000;
+}
+
+
+.le-form__submit-block {
+	padding: 20px 0;
+}
+
+.submit-block__btn {
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 23px;
+	color: #FFFFFF !important;
+	background: linear-gradient(46.62deg, #E53656 21.87%, #6082D8 124.73%);
+	box-shadow: 0px 0px 15px 5px rgba(229, 54, 86, 0.4);
+	border-radius: 10px;
+	padding: 20px 100px;	
+}
+
+
+/* legal-entity-form styles end */
