@@ -120,9 +120,25 @@
 	function hideForm() {
 		document.getElementById("close").style.display = "none";
 		document.getElementById("ie-form").style.display = "none";
+		document.getElementById("le-form").style.display = "none";
 		const blur = document.querySelector('.container');
 		blur.style.filter = 'unset';	
 	}
+
+	function switchToLegalEntity() {
+		document.getElementById("ie-form").style.display = "none";
+		document.getElementById("le-form").style.display = "block";
+	}
+
+	function switchToIndividualEntity() {
+		document.getElementById("le-form").style.display = "none";
+		document.getElementById("ie-form").style.display = "block";	
+	}
+
+	
+
+	
+
 
 	// script for le form
 	// function showForm() {

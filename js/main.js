@@ -64,12 +64,12 @@ class ieForm extends HTMLElement {
 
 			<div class="ie-form__switch">
 				<div class="ie-form__switch-left switch-element">
-					<a class="switch-left__btn" onclick="">
+					<a class="switch-left__btn">
 						<span class="switch-left__text">Фіз. особа</span>
 					</a>	
 				</div>
 				<div class="ie-form__switch-right switch-element">
-					<a class="switch-right__btn" onclick="">
+					<a class="switch-right__btn" onclick="switchToLegalEntity()">
 						<span class="switch-right__text">Юр. особа</span>
 					</a>	
 				</div>
@@ -237,12 +237,12 @@ class leForm extends HTMLElement {
 
 			<div class="le-form__switch">
 				<div class="le-form__switch-left switch-element">
-					<a class="switch-left__btn" onclick="">
+					<a class="switch-left__btn" onclick="switchToIndividualEntity()">
 						<span class="switch-left__text">Фіз. особа</span>
 					</a>	
 				</div>
 				<div class="le-form__switch-right switch-element">
-					<a class="switch-right__btn" onclick="">
+					<a class="switch-right__btn">
 						<span class="switch-right__text">Юр. особа</span>
 					</a>	
 				</div>
