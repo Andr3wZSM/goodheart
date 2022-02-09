@@ -46,14 +46,14 @@
 .le-form__switch-left {
 	border-radius: 5px 0px 0px 5px;
 	border: 2px solid #363B5D;
-	background: #363B5D;
-	color: #FFFFFF;
+	color: #363B5D;
 }
 
 .le-form__switch-right {
 	border-radius: 0px 5px 5px 0px;
 	border: 2px solid #363B5D;
-	color: #363B5D;
+	background: #363B5D;
+	color: #FFFFFF;
 }
 
 .switch-element {
@@ -310,5 +310,12 @@
 	padding: 20px 100px;	
 }
 /* legal-entity-form styles end */
+
+
+
+
+/* individual-entity-form styles start */
+
+/* individual-entity-form styles end */
 
 
