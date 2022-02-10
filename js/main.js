@@ -1,4 +1,4 @@
-// header defenition start
+// header definition start
 class MyHeader extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
@@ -46,16 +46,16 @@ class MyHeader extends HTMLElement {
 				</span>
 			</div>
 		</header>
-					`
+			`
 	}
 }
 
 customElements.define('my-header', MyHeader)
-// header defenition end
+// header definition end
 
 
 
-// ie form defenition start
+// ie form difenition start
 class ieForm extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
@@ -219,16 +219,16 @@ class ieForm extends HTMLElement {
 				<a href="" class="submit-block__btn">Допомогти</a>	
 			</div>
 		</div>
-				`
+			`
 	}
 }
 
 customElements.define('ie-form', ieForm)
-// ie form defenition end
+// ie form difinition end
 
 
 
-// le form defenition start
+// le form difenition start
 class leForm extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
@@ -450,9 +450,55 @@ class leForm extends HTMLElement {
 				<a href="" class="submit-block__btn">Допомогти</a>	
 			</div>
 		</div>
-				`
+			`
 	}
 }
 
 customElements.define('le-form', leForm)
-// le form defenition end
+// le form difinition end
+
+
+
+// search difenition start
+class searchBlock extends HTMLElement {
+	connectedCallback() {
+		this.innerHTML = `
+			<div class="search" id="search">
+				<div class="search__inner">
+					<input type="text" class="search__input" id="search__input" placeholder="Пошук" >
+					<img src="template/img/cross.png" alt="exit" class="search__input-cross" onclick="hideSearch()">
+				</div>
+				<div class="search__result" id="search__result">
+					<div class="search__result-row">
+						<div class="result-row__column column-category">
+							<span class="column-category__text">Проекти</span>
+						</div>
+						<div class="result-row__column category-item">
+							<span class="category-item__title">Діти</span>
+							<span class="category-item__desc" id="desc1">Для операції на сердце маленькому хлопчику, необхідно зібрати гроші на ліки</span>
+							<span class="category-item__desc" id="desc2">Збираємо гроші на лікування п’ятирічного Василя, який став жертвою ДТП </span>
+						</div>
+						<div class="result-row__column category-item">
+							<span class="category-item__title">Війна</span>
+							<span class="category-item__desc">Необхідно зібрати ліки для поранених бійців із зони АТО</span>
+						</div>
+					</div>
+					<div class="search__result-row">
+						<div class="result-row__column column-category">
+							<span class="column-category__text">Архів</span>
+						</div>
+						<div class="result-row__column category-item" id="category-item">
+							<span class="category-item__title">Діти</span>
+							<span class="category-item__desc">Необхідно купити ліки для дитячого будинку в місті Київ</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		`
+	}
+}
+
+customElements.define('search-block', searchBlock)
+// search form definition end
+
+

@@ -1,7 +1,6 @@
 <link rel="stylesheet" href="/template/css/styles.css">
 <script type="module" src="/template/js/main.js"></script>
 
-
 <div class="background">
 	
 </div>
@@ -85,60 +84,10 @@
 			</a>
 		</div>
 
-		<!-- search start -->
-		<div class="search" id="search">
-			<div class="search__inner">
-				<input type="text" class="search__input" id="search__input" placeholder="Пошук" >
-				<img src="template/img/cross.png" alt="exit" class="search__input-cross" onclick="hideSearch()">
-			</div>
-			<div class="search__result" id="search__result">
-				<div class="search__result-row">
-					<div class="result-row__column column-category">
-						<span class="column-category__text">Проекти</span>
-					</div>
-					<div class="result-row__column category-item">
-						<span class="category-item__title">Діти</span>
-						<span class="category-item__desc" id="desc1">Для операції на сердце маленькому хлопчику, необхідно зібрати гроші на ліки</span>
-						<span class="category-item__desc" id="desc2">Збираємо гроші на лікування п’ятирічного Василя, який став жертвою ДТП </span>
-					</div>
-					<div class="result-row__column category-item">
-						<span class="category-item__title">Війна</span>
-						<span class="category-item__desc">Необхідно зібрати ліки для поранених бійців із зони АТО</span>
-					</div>
-				</div>
-				<div class="search__result-row">
-					<div class="result-row__column column-category">
-						<span class="column-category__text">Архів</span>
-					</div>
-					<div class="result-row__column category-item" id="category-item">
-						<span class="category-item__title">Діти</span>
-						<span class="category-item__desc">Необхідно купити ліки для дитячого будинку в місті Київ</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- search end -->
+		<search-block></search-block>
 	</div>
 </div>
 
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-function showSearch() {
-	document.getElementById("search").style.display = "block";
-}
+<script src="/template/js/search.js"></script>
 
-function hideSearch() {
-	document.getElementById("search").style.display = "none";	
-}
-
-$(document).ready(function () {
-    $("#search__input").keyup(function () {
-        if(this.value == "Гроші на ліки"){
-            $('#search__result').css("display", "block");
-        }else{
-            $('#search__result').css("display", "none");
-        }
-    });
-});
-</script>
