@@ -1,32 +1,4 @@
-@font-face {
-    font-family: 'Geometria', 'Gilroy';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-    	url('/template/fonts/Geometria-ExtraBold.ttf') format('ttf'),
-    	url('/template/fonts/gilroy-light.otf') format('otf');
-}
-
-ul {
-	padding: 0;
-}
-
-button {
-	all: unset;
-}
-
-input {
-	all: unset;
-}
-
-body {
-	color: #FFFFFF;
-	font-family: 'Geometria';
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 21px;	
-}
-
+/* background styles start */
 .background {
 	position: fixed;
 	height: 100%;
@@ -43,6 +15,7 @@ body {
 	height: 100vh;
 	position: relative;
 	z-index: 1;
+	background-image: unset !important;
 }
 
 .background-img {
@@ -50,104 +23,9 @@ body {
 	right: 10px;
 	bottom: 50px;
 }
+/* background styles end */
 
-.wrapper-full {
-	max-width: 1500px;
-	padding: 0 30px;
-	margin: 0 auto;
-}
 
-/* header styles start */
-.header {
-	width: 100%;
-	display: flex;
-    flex-wrap: nowrap;
-	align-items: center;
-	margin-bottom: 130px;
-	padding-top: 20px;
-	font-size: 14px;
-}
-
-.header__logo {
-	position: absolute;
-	margin-right: 100px;
-}
-
-.header__logo-pic {
-	height: 32.54px;
-	width: 36px;
-}
-
-.header__languages {
-	margin-right: auto;
-}
-
-.languages__list {
-	display: flex;
-	margin-left: 136px;
-}
-
-.languages__list-item {
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 18px;
-	margin-right: 10px;
-	padding: 8px 0;
-	color: #C5D5E6;
-}
-
-.languages__list-item:active {
-	color: #FFFFFF;
-}
-
-.languages__list-item:last-child {
-	margin-right: 0;
-}
-
-.header__menu {
-	margin-right: 179px;
-	color: #C5D5E6;
-}
-
-.menu__list {
-	display: flex;
-}
-
-.menu__list-item {
-	font-weight: 800;
-	font-size: 14px;
-	line-height: 18px;
-	padding: 8px 20px;
-}
-
-.menu__list-item:last-child {
-	background: linear-gradient(270deg, #6082D7 -81.69%, #E73453 100%);
-	border-radius: 5px;
-	color: #FFFFFF;
-	margin-right: 0;
-}
-
-.header__search {
-	margin-right: 100px;
-}
-
-.header__search-ico {
-	height: 18px;
-	width: 18px;
-}
-
-.header__authorization {
-	mix-blend-mode: normal;
-	opacity: 0.5;
-	color: #C5D5E6;
-}
-
-.authorization__sign-in {
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 18px;
-}
-/* header styles end */
 
 /* about styles start */
 .about {
