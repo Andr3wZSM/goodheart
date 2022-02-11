@@ -27,10 +27,7 @@ body {
 .container {
 	height: 100vh;
 	position: relative;
-	background-image: url('/template/img/blue-bg.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+	background: linear-gradient(321.24deg, #4792E1 -91.81%, #4174B3 -31.53%, #363B5D 82.08%);
 }
 
 .wrapper-full {
