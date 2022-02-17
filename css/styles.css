@@ -519,15 +519,10 @@ body {
 }
 
 .enter-data__card-data {
-	background-color: #C5D5E6;
+	background-color: #9C5D9A;
 	border-radius: 15px;
 	padding: 20px 24px;
 	color:  #FFFFFF;
-}
-
-.enter-data__card-data {
-	max-width: 375px;
-	margin-top: 6px;
 }
 
 .card-number__inputs {
@@ -796,13 +791,6 @@ body {
 }
 
 .enter-data__card-data {
-	background-color: #C5D5E6;
-	border-radius: 15px;
-	padding: 20px 24px;
-	color:  #FFFFFF;
-}
-
-.enter-data__card-data {
 	max-width: 375px;
 	margin-top: 6px;
 }
@@ -859,3 +847,44 @@ body {
 	padding: 20px 100px;	
 }
 /* individual-entity-form styles end */
+
+
+
+/* paypal card styles start */
+.enter-data__paypal-data {
+	display: none;
+	margin-top: 6px;
+	padding: 20px 24px;
+	border: 1px solid #DADADA;
+	border-radius: 15px;
+	color: #000;
+	text-align: center;
+}
+
+.paypal-input {
+	height: 40px;
+	background: #F3F7FA;
+	border-radius: 5px;
+	padding: 0px 10px;
+}
+
+.paypal-group {
+	display: flex;
+}
+
+.paypal-row {
+	margin-bottom: 20px;
+}
+
+.paypal-input {
+	width: 180px;
+}
+
+.paypal-data__card-number, .paypal-data__phone-number {
+	width: 400px;
+}
+
+.other-data__expires-input, .name__first-name-input {
+	margin-right: 20px;
+}
+/* paypal card styles end */

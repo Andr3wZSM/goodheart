@@ -169,7 +169,7 @@ class ieForm extends HTMLElement {
 							<img src="template/img/svg/visa.svg" alt="Visa" class="item__img">
 						</div>
 						<div class="card-items__item">
-							<img src="template/img/svg/privat24.svg" alt="Приват24" class="item__img">
+							<img src="template/img/svg/privat24.svg" alt="Приват24" class="item__img" onclick="showPrivat()">
 						</div>
 						<div class="card-items__item">
 							<img src="template/img/svg/terminals.svg" alt="Термінали України" class="item__img">
@@ -178,48 +178,63 @@ class ieForm extends HTMLElement {
 							<img src="template/img/svg/webmoney.svg" alt="WebMoney" class="item__img">
 						</div>
 						<div class="card-items__item">
-							<img src="template/img/svg/paypal.svg" alt="PayPal" class="item__img">
+							<img src="template/img/svg/paypal.svg" alt="PayPal" class="item__img" onclick="showPayPal()">
 						</div>
 					</div>
 				</div>
-				<div class="finance-help__enter-data">
+				<div class="finance-help__enter-data" >
 					<span class="enter-data__label">
 						Введіть наступні данні
 					</span>
-					<div class="enter-data__card-data">
-						<div class="card-data__card-number">
-							<span class="card-number__label">Номер карти</span>
-							<div class="card-number__inputs">
-								<input type="text" class="card-number__input">
-								<input type="text" class="card-number__input">
-								<input type="text" class="card-number__input">
-								<input type="text" class="card-number__input">
+					<div class="privat-view" id="privatForm">
+						<div class="enter-data__card-data">
+							<div class="card-data__card-number">
+								<span class="card-number__label">Номер карти</span>
+								<div class="card-number__inputs">
+									<input type="text" class="card-number__input">
+									<input type="text" class="card-number__input">
+									<input type="text" class="card-number__input">
+									<input type="text" class="card-number__input">
+								</div>
 							</div>
-						</div>
-						<div class="card-data__other-data">
-							<div class="other-data__validity other-data__item">
-								<span class="validity__label">
-									Термін дії
-								</span>
-								<input type="text" class="validity__input other-data__input">
+							<div class="card-data__other-data">
+								<div class="other-data__validity other-data__item">
+									<span class="validity__label">
+										Термін дії
+									</span>
+									<input type="text" class="validity__input other-data__input">
+								</div>
+								<div class="other-data__cvv other-data__item">
+									<span class="cvv__label">
+										CVC/CVV
+									</span>
+									<input type="text" class="cvv__input other-data__input">
+								</div>
 							</div>
-							<div class="other-data__cvv other-data__item">
-								<span class="cvv__label">
-									CVC/CVV
-								</span>
-								<input type="text" class="cvv__input other-data__input">
+						</div>	
+					</div>
+					<div class="paypal-view" id="paypalForm">
+						<div class="enter-data__paypal-data">
+							<input type="text" class="paypal-data__card-number paypal-input paypal-row" placeholder="Номер картки">
+							<div class="paypal-data__other-data paypal-group paypal-row">
+								<input type="text" class="other-data__expires-input paypal-input" placeholder="Закінчується">
+								<input type="text" class="other-data__csc-input paypal-input" placeholder="CSC">
 							</div>
+							<div class="paypal-data__name paypal-group paypal-row">
+								<input type="text" class="name__first-name-input paypal-min-input paypal-input" placeholder="Ім’я">
+								<input type="text" class="name__last-name-input paypal-min-input paypal-input" placeholder="Прізвище">
+							</div>
+							<input type="text" class="paypal-data__phone-number paypal-input" placeholder="Телефон">
 						</div>
 					</div>
-				</div>
+				</div>	
 			</div>
 			
-
 			<div class="ie-form__submit-block">
 				<a href="" class="submit-block__btn">Допомогти</a>	
 			</div>
 		</div>
-			`
+		`
 	}
 }
 
@@ -500,5 +515,9 @@ class searchBlock extends HTMLElement {
 
 customElements.define('search-block', searchBlock)
 // search form definition end
+
+
+
+// current task: change background color for .enter-data__card-data
 
 
