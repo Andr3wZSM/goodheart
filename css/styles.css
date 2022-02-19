@@ -518,6 +518,52 @@ body {
 	margin-top: 6px;
 }
 
+.card-items__item {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	border-radius: 10px;
+	font-family: Gilroy;
+	color: #FFFFFF;
+}
+
+.itemPrivat {
+	background-color: #9C5D9A;
+}
+
+.itemPrivat__sign {
+	margin-top: 20px;
+	margin-bottom: 19px;
+	
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.itemPrivat__name {
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.itemPayPal {
+	background-color: #C5D5E6;
+}
+
+.itemPayPal__sign {
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 10.32px;
+	width: 29.87px;
+	height: 30.68px;
+}
+
+.itemPayPal__name {
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 14px;
+}
+
 .enter-data__card-data {
 	background-color: #9C5D9A;
 	border-radius: 15px;

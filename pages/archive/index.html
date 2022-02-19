@@ -106,179 +106,7 @@
 <img src="template/img/cross.png" alt="close" class="popup-close" id="close" onclick="hideForm()">
 
 <!-- individual-entity-form -->
-<!-- <ie-form></ie-form> -->
-
-<div class="ie-form" id="ie-form">
-			<span class="ie-form__title">Заповніть форму</span>
-
-			<div class="ie-form__switch">
-				<div class="ie-form__switch-left switch-element">
-					<a class="switch-left__btn">
-						<span class="switch-left__text">Фіз. особа</span>
-					</a>	
-				</div>
-				<div class="ie-form__switch-right switch-element">
-					<a class="switch-right__btn" onclick="switchToLegalEntity()">
-						<span class="switch-right__text">Юр. особа</span>
-					</a>	
-				</div>
-			</div>
-
-			<div class="ie-form__enter-data">
-				<div class="enter-data__personal-part">
-					<div class="personal-part__name enter-data__row">
-						<div class="name__first-name row-item">
-							<span class="first-name__label">Ім’я</span>
-							<input type="text" class="first-name__input name__input enter-data-input">
-						</div>
-						<div class="name__last-name row-item">
-							<span class="last-name__label">Фамілія</span>
-							<input type="text" class="last-name__input name__input enter-data-input">
-						</div>
-					</div>
-					<div class="personal-part__company enter-data__row">
-						<div class="company__text-part row-item">
-							<span class="company__label">Назва компаніі, організації</span>
-							<input type="text" class="company__input enter-data-input">
-						</div>
-						<div class="company__logo-part">
-							<a href="" class="logo-part__link">
-								<span class="logo-part__link-text">+  Логотип</span>
-							</a>
-						</div>
-					</div>
-					<div class="personal-part__email enter-data__row row-item">
-						<span class="email__label">Email-адрес</span>
-						<input type="text" class="email__input enter-data-input">
-					</div>
-					<div class="personal-part__phone enter-data__row row-item">
-						<span class="phone__label">Номер телефону</span>
-						<input type="text" class="phone__input enter-data-input">
-					</div>
-				</div>
-
-				<div class="enter-data__general-part">
-					<div class="general-part__country enter-data__row row-item">
-						<span class="country__label">Країна</span>
-						<input type="text" class="country__input enter-data-input">
-					</div>
-					<div class="general-part__location enter-data__row">
-						<div class="location__town row-item">
-							<span class="town__label">Місто</span>
-							<input type="text" class="town__input location__input enter-data-input">
-						</div>
-						<div class="location__state row-item">
-							<span class="state__label">Штат, район</span>
-							<input type="text" class="state__input location__input enter-data-input">
-						</div>
-					</div>
-					<div class="general-part__address enter-data__row row-item">
-						<span class="address__label">Адреса</span>
-						<input type="text" class="address__input enter-data-input">
-					</div>
-					<div class="general-part__zip-code enter-data__row row-item">
-						<span class="zip-code__label">Поштовий індекс</span>
-						<input type="text" class="zip-code__input enter-data-input">
-					</div>
-				</div>
-			</div>
-
-			<span class="choose-element__title ie-form__title">Види допомоги</span>
-
-			<div class="ie-form__choose-help">
-				<span class="choose-help__subtitle">Ви можете змінити вид допомоги</span>
-				<div class="choose-help__elements">
-					<div class="elements__el-make elements__element">
-						<img src="template/img/svg/types-of-help_item-1.svg" alt="Зробити" class="el-make__img help-element-img">
-						<span class="elements__element-title">Зробити</span>
-					</div>
-					<div class="elements__el-finance elements__element">
-						<img src="template/img/svg/types-of-help_item-5.svg" alt="Фінансова допомога" class="el-make__img help-element-img">
-						<span class="elements__element-title el-finance__title">Фінансова допомога</span>
-					</div>
-					<div class="elements__el-material elements__element">
-						<img src="template/img/svg/types-of-help_item-3.svg" alt="Матеріальна допомога" class="el-make__img help-element-img">
-						<span class="elements__element-title">Матеріальна допомога</span>
-					</div>
-					<div class="elements__el-charity elements__element">
-						<img src="template/img/svg/types-of-help_item-4.svg" alt="Волонтерство" class="el-make__img help-element-img">
-						<span class="elements__element-title">Волонтерство</span>
-					</div>
-				</div>
-			</div>
-
-			<div class="ie-form__finance-help">
-				<div class="finance-help__triangle"></div>
-				<div class="finance-help__payment-methods">
-					<span class="payment-methods__label">
-						Спосіб оплати
-					</span>
-					<div class="payment-methods__card-items">
-						<div class="card-items__item">
-							<img src="template/img/svg/visa.svg" alt="Visa" class="item__img">
-						</div>
-						<div class="card-items__item">
-							<img src="template/img/svg/privat24.svg" alt="Приват24" class="item__img" onclick="showPrivat()">
-						</div>
-						<div class="card-items__item">
-							<img src="template/img/svg/terminals.svg" alt="Термінали України" class="item__img">
-						</div>
-						<div class="card-items__item">
-							<img src="template/img/svg/webmoney.svg" alt="WebMoney" class="item__img">
-						</div>
-						<div class="card-items__item">
-							<img src="template/img/svg/paypal.svg" alt="PayPal" class="item__img" onclick="showPayPal()">
-						</div>
-					</div>
-				</div>
-				<div class="finance-help__enter-data" >
-					<span class="enter-data__label">
-						Введіть наступні данні
-					</span>
-					<div class="enter-data__card-data" id="privatForm">
-						<div class="card-data__card-number">
-							<span class="card-number__label">Номер карти</span>
-							<div class="card-number__inputs">
-								<input type="text" class="card-number__input">
-								<input type="text" class="card-number__input">
-								<input type="text" class="card-number__input">
-								<input type="text" class="card-number__input">
-							</div>
-						</div>
-						<div class="card-data__other-data">
-							<div class="other-data__validity other-data__item">
-								<span class="validity__label">
-									Термін дії
-								</span>
-								<input type="text" class="validity__input other-data__input">
-							</div>
-							<div class="other-data__cvv other-data__item">
-								<span class="cvv__label">
-									CVC/CVV
-								</span>
-								<input type="text" class="cvv__input other-data__input">
-							</div>
-						</div>
-					</div>
-					<div class="enter-data__paypal-data" id="paypalForm">
-						<input type="text" class="paypal-data__card-number paypal-input paypal-row" placeholder="Номер картки">
-						<div class="paypal-data__other-data paypal-group paypal-row">
-							<input type="text" class="other-data__expires-input paypal-input" placeholder="Закінчується">
-							<input type="text" class="other-data__csc-input paypal-input" placeholder="CSC">
-						</div>
-						<div class="paypal-data__name paypal-group paypal-row">
-							<input type="text" class="name__first-name-input paypal-min-input paypal-input" placeholder="Ім’я">
-							<input type="text" class="name__last-name-input paypal-min-input paypal-input" placeholder="Прізвище">
-						</div>
-						<input type="text" class="paypal-data__phone-number paypal-input" placeholder="Телефон">
-					</div>
-				</div>	
-			</div>
-			
-			<div class="ie-form__submit-block">
-				<a href="" class="submit-block__btn">Допомогти</a>	
-			</div>
-		</div>
+<ie-form></ie-form>
 
 
 <!-- legal-entity-form start -->
@@ -312,12 +140,16 @@
 
 	function showPayPal() {
 		document.getElementById("privatForm").style.display = "none";
-		document.getElementById("paypalForm").style.display = "block";	
+		document.getElementById("paypalForm").style.display = "block";
+		document.getElementById("itemPrivat").style.backgroundColor = "#C5D5E6";
+		document.getElementById("itemPayPal").style.backgroundColor = "#9C5D9A";
 	}
 
 	function showPrivat() {
 		document.getElementById("paypalForm").style.display = "none";
-		document.getElementById("privatForm").style.display = "block";	
+		document.getElementById("privatForm").style.display = "block";
+		document.getElementById("itemPrivat").style.backgroundColor = "#9C5D9A";
+		document.getElementById("itemPayPal").style.backgroundColor = "#C5D5E6";
 	}
 </script>
 
@@ -325,3 +157,5 @@
 <script src="/template/js/search.js"></script>
 
 <!-- pointer-events: none; -->
+
+
